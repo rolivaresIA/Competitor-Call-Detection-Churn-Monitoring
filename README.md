@@ -115,6 +115,13 @@ Gracias a este pipeline fue posible:
 
 El resultado final fue la habilitación de un sistema de monitoreo continuo de riesgo de churn basado en comportamiento de contacto externo, mejorando la capacidad de respuesta del negocio.
 
+## 📊 Output / Final Report
+
+El pipeline genera un reporte final en formato PDF con los principales resultados del análisis de llamadas de la competencia y su relación con churn.
+
+📄 Descargar reporte:
+[Ver reporte](outputs/Reporte_Llamados_de_la_Competencia.pdf)
+
 ## 👾 Tech Stack
 
 - Google Cloud Platform (GCP)
