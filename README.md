@@ -50,7 +50,7 @@ A partir de esta integración de datos, el sistema permite:
 El sistema fue construido sobre Google Cloud Platform utilizando BigQuery como motor principal de procesamiento de datos.
 
 <p align="center">
-  <img src="assets/diagrams/architecture.PNG" width="900"/>
+  <img src="assets/diagrams/architecture.PNG" width="650"/>
 </p>
 
 El pipeline integra múltiples fuentes de datos de la compañía y del ecosistema de telecomunicaciones, permitiendo la construcción de un flujo automatizado de análisis de llamadas y portabilidad.
@@ -121,7 +121,7 @@ El pipeline se ejecuta de forma diaria mediante consultas programadas en BigQuer
 El pipeline permitió identificar un patrón consistente de comportamiento post-contacto con la competencia, donde llamadas de mayor duración (>5 min) presentan una probabilidad significativamente mayor de port-out dentro de 5 días.
 
 <p align="center">
-  <img src="outputs/Insight_portout.PNG" width="900"/>
+  <img src="outputs/Insight_portout.PNG" width="650"/>
 </p>
 
 Este insight permitió priorizar segmentos de clientes de alto riesgo para acciones de retención temprana, incorporando criterios de contacto competitivo en la estrategia del equipo de Churn Analytics, incluyendo campañas de recontacto y ofertas preventivas.
@@ -153,7 +153,7 @@ El pipeline genera un reporte final en formato PDF con los principales resultado
 Además, se incluye una vista previa del dashboard utilizado para consumo ejecutivo:
 
 <p align="center">
-  <img src="outputs/dashboard_preview.png" width="900"/>
+  <img src="outputs/dashboard_preview.png" width="650"/>
 </p>
 
 📄 Descargar reporte:
