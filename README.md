@@ -96,3 +96,11 @@ Gracias a este pipeline fue posible:
 - Automatizar reportes que anteriormente se realizaban de forma manual o no existían
 
 El resultado final fue la habilitación de un sistema de monitoreo continuo de riesgo de churn basado en comportamiento de contacto externo, mejorando la capacidad de respuesta del negocio.
+
+## 👾 Tech Stack
+
+- Google Cloud Platform (GCP)
+- BigQuery
+- SQL (Window Functions, CTEs, Joins)
+- Looker Studio
+- Data Pipelines / Scheduled Queries
