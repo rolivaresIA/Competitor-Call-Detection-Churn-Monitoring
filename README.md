@@ -50,7 +50,7 @@ A partir de esta integración de datos, el sistema permite:
 El sistema fue construido sobre Google Cloud Platform utilizando BigQuery como motor principal de procesamiento de datos.
 
 <p align="center">
-  <img src="assets/diagrams/architecture.PNG" width="650"/>
+  <img src="assets/diagrams/architecture.PNG" width="800"/>
 </p>
 
 El pipeline integra múltiples fuentes de datos de la compañía y del ecosistema de telecomunicaciones, permitiendo la construcción de un flujo automatizado de análisis de llamadas y portabilidad.
