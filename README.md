@@ -4,6 +4,22 @@ Pipeline end-to-end en BigQuery para el monitoreo de llamadas entrantes provenie
 
 Este proyecto fue desarrollado como parte de procesos de analítica en el área de Churn & Business Analytics, con foco en entregar insights diarios a equipos de gerencia y VP del mercado Personas.
 
+## 📑 Contenido
+
+- 📋 Business Context
+- 🎯 Objective of the Project
+- 🛠️ Data Pipeline Architecture
+- 🧠 Convención de nombres en el diagrama
+- 📥 Data Sources
+- ⚙️ Data Processing
+- 🗄️ Data Models Generated
+- 📊 Data Visualization
+- 🔄 Automation
+- 💡 Business Impact
+- 📂 Repository Structure
+- 📄 Output / Final Report
+- 👾 Tech Stack
+
 ## 📋 Business Context
 
 En la industria de telecomunicaciones, la competencia utiliza estrategias de contacto directo a clientes mediante llamadas telefónicas con el objetivo de inducir portabilidad (churn).
@@ -53,7 +69,7 @@ Estos nombres corresponden directamente a las tablas reales implementadas en Big
 
 Esta simplificación se realizó únicamente con fines visuales, sin afectar la estructura ni lógica del pipeline de datos.
 
-### 1. Data Sources
+### 📥 1. Data Sources
 
 - **Traffic Voice Data (Datalake de llamadas entrantes):**
   Contiene el registro de llamadas telefónicas, incluyendo número origen, número destino, duración y fecha del evento.
@@ -64,7 +80,7 @@ Esta simplificación se realizó únicamente con fines visuales, sin afectar la 
 - **Industry Portability Dataset:**
   Registro de portabilidad de la industria, utilizado para identificar cambios de operador en el tiempo.
 
-### 2. Data Processing (BigQuery)
+### ⚙️ 2. Data Processing (BigQuery)
 
 Se implementaron procesos de transformación mediante SQL en BigQuery:
 
@@ -75,7 +91,7 @@ Se implementaron procesos de transformación mediante SQL en BigQuery:
 - Eliminación de duplicados mediante window functions
 - Cruce con datos de portabilidad en una ventana de 5 días
 
-### 3. Data Models Generated
+### 🗄️ 3. Data Models Generated
 
 El pipeline genera tres tablas principales:
 
@@ -88,7 +104,7 @@ El pipeline genera tres tablas principales:
 - **BT_PORT_OUT_LLAMADAS_ENTR:**
   Análisis segmentado por operador de origen y duración de llamada.
 
-### 4. Data Visualization
+### 📊 4. Data Visualization
 
 Los datos procesados son consumidos por dashboards en Looker Studio, los cuales permiten:
 
@@ -97,7 +113,7 @@ Los datos procesados son consumidos por dashboards en Looker Studio, los cuales 
 - Segmentación por operador y duración de llamada
 - Visualización ejecutiva para gerencia y VP
 
-### 5. Automation
+### 🔄 5. Automation
 
 El pipeline se ejecuta de forma diaria mediante consultas programadas en BigQuery, asegurando la actualización constante de los indicadores utilizados por el negocio.
 
@@ -114,6 +130,24 @@ Gracias a este pipeline fue posible:
 - Automatizar reportes que anteriormente se realizaban de forma manual o no existían
 
 El resultado final fue la habilitación de un sistema de monitoreo continuo de riesgo de churn basado en comportamiento de contacto externo, mejorando la capacidad de respuesta del negocio.
+
+## 📂 Repository Structure
+
+```text
+├── assets/
+│   └── diagrams/
+│       └── architecture.png
+│
+├── outputs/
+│   └── reporte_llamados.pdf
+│
+├── sql/
+│   ├── 01_competitor_calls.sql
+│   ├── 02_portability_5day.sql
+│   └── 03_portability_by_company.sql
+│
+└── README.md
+```
 
 ## 📊 Output / Final Report
 
