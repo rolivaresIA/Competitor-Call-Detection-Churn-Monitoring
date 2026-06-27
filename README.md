@@ -61,13 +61,13 @@ Se implementaron procesos de transformación mediante SQL en BigQuery:
 
 El pipeline genera tres tablas principales:
 
-- **BT_LLAMADAS_ENTRANTES_ULT40_DIAS_V4**
+- **BT_LLAMADAS_ENTRANTES_LAST40**
   Dataset base con llamadas entrantes enriquecidas con información de clientes.
 
-- **BT_PORT_OUT_LLAMADAS_ENTR_V4**
+- **BT_PORT_OUT_LLAMADAS_ENTR**
   Métricas agregadas de portabilidad dentro de 5 días post contacto.
 
-- **BT_PORT_OUT_LLAMADAS_ENTR_EMPRESAS_V4**
+- **BT_PORT_OUT_LLAMADAS_ENTR**
   Análisis segmentado por operador de origen y duración de llamada.
 
 ### 4. Data Visualization
