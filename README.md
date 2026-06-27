@@ -120,7 +120,7 @@ El resultado final fue la habilitación de un sistema de monitoreo continuo de r
 El pipeline genera un reporte final en formato PDF con los principales resultados del análisis de llamadas de la competencia y su relación con churn.
 
 📄 Descargar reporte:
-[Ver reporte](outputs/Reporte_Llamados_de_la_Competencia.pdf)
+👉 **[Ver reporte generado](outputs/reporte_llamados.pdf)**
 
 ## 👾 Tech Stack
 
