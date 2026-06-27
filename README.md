@@ -39,6 +39,20 @@ El sistema fue construido sobre Google Cloud Platform utilizando BigQuery como m
 
 El pipeline integra múltiples fuentes de datos de la compañía y del ecosistema de telecomunicaciones, permitiendo la construcción de un flujo automatizado de análisis de llamadas y portabilidad.
 
+## 🧠 Convención de nombres en el diagrama
+
+Para mejorar la legibilidad visual del diagrama de arquitectura, se utilizaron nombres simplificados para las tablas.
+
+Estos nombres corresponden directamente a las tablas reales implementadas en BigQuery:
+
+| Nombre en diagrama | Tabla real en BigQuery |
+|--------------------|------------------------|
+| BT_LLAMADAS_ENTRANTES_LAST40 | BT_LLAMADAS_ENTRANTES_ULT40_DIAS_V4 |
+| BT_PORT_OUT_LLAMADAS_ENTR | BT_PORT_OUT_LLAMADAS_ENTR_V4 |
+| BT_PORT_OUT_LLAMADAS_ENTR | BT_PORT_OUT_LLAMADAS_ENTR_EMPRESAS_V4 |
+
+Esta simplificación se realizó únicamente con fines visuales, sin afectar la estructura ni lógica del pipeline de datos.
+
 ### 1. Data Sources
 
 - **Traffic Voice Data (Datalake de llamadas entrantes)**
