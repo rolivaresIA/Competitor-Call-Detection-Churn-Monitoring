@@ -136,6 +136,8 @@ Adicionalmente, el sistema habilitó un monitoreo diario del riesgo de churn aso
 │       └── architecture.png
 │
 ├── outputs/
+│   ├── Insight_portout.PNG
+│   ├── dashboard_preview.png
 │   └── reporte_llamados.pdf
 │
 ├── sql/
