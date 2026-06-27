@@ -153,6 +153,12 @@ El resultado final fue la habilitación de un sistema de monitoreo continuo de r
 
 El pipeline genera un reporte final en formato PDF con los principales resultados del análisis de llamadas de la competencia y su relación con churn.
 
+Además, se incluye una vista previa del dashboard utilizado para consumo ejecutivo:
+
+<p align="center">
+  <img src="outputs/dashboard_preview.png" width="900"/>
+</p>
+
 📄 Descargar reporte:
 👉 **[Ver reporte generado](outputs/reporte_llamados.pdf)**
 
