@@ -1,7 +1,0 @@
-## 📊 Output del Sistema
-
-El pipeline genera un reporte analítico que mide el impacto de llamadas provenientes de la competencia sobre la probabilidad de portabilidad (churn) en una ventana de 5 días.
-
-📄 Ejemplo de output:
-
-- [Descargar reporte](outputs/competitor_call_to_churn_impact_report.pdf)
