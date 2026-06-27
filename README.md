@@ -101,7 +101,7 @@ El pipeline genera tres tablas principales:
 - **BT_PORT_OUT_LLAMADAS_ENTR:**
   Métricas agregadas de portabilidad dentro de 5 días post contacto.
 
-- **BT_PORT_OUT_LLAMADAS_ENTR:**
+- **BT_PORT_OUT_LLAMADAS_ENTR_EMP:**
   Análisis segmentado por operador de origen y duración de llamada.
 
 ### 📊 4. Data Visualization
