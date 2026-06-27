@@ -119,17 +119,16 @@ El pipeline se ejecuta de forma diaria mediante consultas programadas en BigQuer
 
 ## 💡 Business Impact
 
-Este sistema permitió transformar datos de tráfico de llamadas en información accionable para la toma de decisiones en el área de Churn & Retention.
+El pipeline permitió identificar un patrón consistente de comportamiento post-contacto con la competencia, donde llamadas de mayor duración (>5 min) presentan una probabilidad significativamente mayor de port-out dentro de 5 días.
 
-Gracias a este pipeline fue posible:
+Este insight habilitó la identificación de un segmento de clientes de alto riesgo, permitiendo priorización de acciones de retención como campañas de recontacto y estrategias de contraoferta.
 
-- Identificar patrones de contacto de la competencia sobre la base de clientes activa
-- Priorizar segmentos de clientes con mayor riesgo de portabilidad y accionar campañas
-- Detectar variaciones en la probabilidad de churn según duración de llamada y operador de origen
-- Entregar visibilidad diaria a equipos de gestión sobre actividad competitiva
-- Automatizar reportes que anteriormente se realizaban de forma manual o no existían
+Adicionalmente, el sistema permitió monitoreo diario del riesgo de churn, mejorando la capacidad de respuesta del área de Churn & Retention frente a actividad competitiva.
 
-El resultado final fue la habilitación de un sistema de monitoreo continuo de riesgo de churn basado en comportamiento de contacto externo, mejorando la capacidad de respuesta del negocio.
+<p align="center">
+  <img src="outputs/Insight_portout.PNG" width="900"/>
+</p>
+
 
 ## 📂 Repository Structure
 
