@@ -90,7 +90,7 @@ Este sistema permitió transformar datos de tráfico de llamadas en información
 Gracias a este pipeline fue posible:
 
 - Identificar patrones de contacto de la competencia sobre la base de clientes activa
-- Priorizar segmentos de clientes con mayor riesgo de portabilidad
+- Priorizar segmentos de clientes con mayor riesgo de portabilidad y accionar campañas
 - Detectar variaciones en la probabilidad de churn según duración de llamada y operador de origen
 - Entregar visibilidad diaria a equipos de gestión sobre actividad competitiva
 - Automatizar reportes que anteriormente se realizaban de forma manual o no existían
