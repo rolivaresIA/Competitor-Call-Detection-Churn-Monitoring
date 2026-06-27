@@ -82,14 +82,13 @@ Esta simplificación se realizó únicamente con fines visuales, sin afectar la 
 
 ### ⚙️ 2. Data Processing (BigQuery)
 
-Se implementaron procesos de transformación mediante SQL en BigQuery:
+Se implementó un pipeline de transformación en BigQuery que incluye:
 
-- Limpieza y normalización de números telefónicos
-- Identificación de llamadas provenientes de operadores competidores mediante prefijos
-- Clasificación de llamadas por duración y segmentación de comportamiento
-- Enriquecimiento con datos de cartera de clientes
-- Eliminación de duplicados mediante window functions
-- Cruce con datos de portabilidad en una ventana de 5 días
+- Normalización de tráfico de llamadas entrantes
+- Identificación de llamadas de competencia mediante reglas de prefijos
+- Enriquecimiento con cartera de clientes activa
+- Construcción de ventana de análisis de churn a 5 días
+- Agregación de métricas por segmento, duración y operador
 
 ### 🗄️ 3. Data Models Generated
 
@@ -121,14 +120,13 @@ El pipeline se ejecuta de forma diaria mediante consultas programadas en BigQuer
 
 El pipeline permitió identificar un patrón consistente de comportamiento post-contacto con la competencia, donde llamadas de mayor duración (>5 min) presentan una probabilidad significativamente mayor de port-out dentro de 5 días.
 
-Este insight habilitó la identificación de un segmento de clientes de alto riesgo, permitiendo priorización de acciones de retención como campañas de recontacto y estrategias de contraoferta.
-
-Adicionalmente, el sistema permitió monitoreo diario del riesgo de churn, mejorando la capacidad de respuesta del área de Churn & Retention frente a actividad competitiva.
-
 <p align="center">
   <img src="outputs/Insight_portout.PNG" width="900"/>
 </p>
 
+Este insight permitió priorizar segmentos de clientes de alto riesgo para acciones de retención temprana, incorporando criterios de contacto competitivo en la estrategia del equipo de Churn Analytics, incluyendo campañas de recontacto y ofertas preventivas.
+
+Adicionalmente, el sistema habilitó un monitoreo diario del riesgo de churn asociado a actividad competitiva, sirviendo como insumo operativo para la toma de decisiones del área de retención y mejorando la velocidad de reacción ante eventos de contacto externo.
 
 ## 📂 Repository Structure
 
