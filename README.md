@@ -55,13 +55,13 @@ Esta simplificación se realizó únicamente con fines visuales, sin afectar la 
 
 ### 1. Data Sources
 
-- **Traffic Voice Data (Datalake de llamadas entrantes)**
+- **Traffic Voice Data (Datalake de llamadas entrantes):**
   Contiene el registro de llamadas telefónicas, incluyendo número origen, número destino, duración y fecha del evento.
 
-- **Customer Portfolio (Cartera de clientes postpago)**
+- **Customer Portfolio (Cartera de clientes postpago):**
   Base de datos de clientes activos, con información como RUT, estado del cliente y segmento.
 
-- **Industry Portability Dataset**
+- **Industry Portability Dataset:**
   Registro de portabilidad de la industria, utilizado para identificar cambios de operador en el tiempo.
 
 ### 2. Data Processing (BigQuery)
