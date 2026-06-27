@@ -142,9 +142,9 @@ El resultado final fue la habilitación de un sistema de monitoreo continuo de r
 │   └── reporte_llamados.pdf
 │
 ├── sql/
-│   ├── 01_competitor_calls.sql
-│   ├── 02_portability_5day.sql
-│   └── 03_portability_by_company.sql
+│   ├── 01_base_call_enrichment.sql
+│   ├── 02_churn_5day_metrics.sql
+│   └── 03_churn_segmentation_analysis.sql
 │
 └── README.md
 ```
