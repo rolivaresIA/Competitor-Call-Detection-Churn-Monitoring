@@ -121,7 +121,7 @@ El pipeline se ejecuta de forma diaria mediante consultas programadas en BigQuer
 El pipeline permitió identificar un patrón consistente de comportamiento post-contacto con la competencia, donde llamadas de mayor duración (>5 min) presentan una probabilidad significativamente mayor de port-out dentro de 5 días.
 
 <p align="center">
-  <img src="outputs/Insight_portout.PNG" width="650"/>
+  <img src="outputs/Insight_portout.PNG" width="600"/>
 </p>
 
 Este insight permitió priorizar segmentos de clientes de alto riesgo para acciones de retención temprana, incorporando criterios de contacto competitivo en la estrategia del equipo de Churn Analytics, incluyendo campañas de recontacto y ofertas preventivas.
@@ -153,7 +153,7 @@ El pipeline genera un reporte final en formato PDF con los principales resultado
 Además, se incluye una vista previa del dashboard utilizado para consumo ejecutivo:
 
 <p align="center">
-  <img src="outputs/dashboard_preview.png" width="650"/>
+  <img src="outputs/dashboard_preview.png" width="600"/>
 </p>
 
 📄 Descargar reporte:
