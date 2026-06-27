@@ -28,3 +28,57 @@ A partir de esta integración de datos, el sistema permite:
 - Analizar el impacto temporal de estas llamadas en la probabilidad de portabilidad
 - Segmentar los resultados por duración de llamada y operador de origen
 - Generar reportes diarios automatizados para equipos de gestión y alta dirección
+
+## 🛠️ Data Pipeline Architecture
+
+El sistema fue construido sobre Google Cloud Platform utilizando BigQuery como motor principal de procesamiento de datos.
+
+El pipeline integra múltiples fuentes de datos de la compañía y del ecosistema de telecomunicaciones, permitiendo la construcción de un flujo automatizado de análisis de llamadas y portabilidad.
+
+### 1. Data Sources
+
+- **Traffic Voice Data (Datalake de llamadas entrantes)**
+  Contiene el registro de llamadas telefónicas, incluyendo número origen, número destino, duración y fecha del evento.
+
+- **Customer Portfolio (Cartera de clientes postpago)**
+  Base de datos de clientes activos, con información como RUT, estado del cliente y segmento.
+
+- **Industry Portability Dataset**
+  Registro de portabilidad de la industria, utilizado para identificar cambios de operador en el tiempo.
+
+### 2. Data Processing (BigQuery)
+
+Se implementaron procesos de transformación mediante SQL en BigQuery:
+
+- Limpieza y normalización de números telefónicos
+- Identificación de llamadas provenientes de operadores competidores mediante prefijos
+- Clasificación de llamadas por duración y segmentación de comportamiento
+- Enriquecimiento con datos de cartera de clientes
+- Eliminación de duplicados mediante window functions
+- Cruce con datos de portabilidad en una ventana de 5 días
+
+### 3. Data Models Generated
+
+El pipeline genera tres tablas principales:
+
+- **BT_LLAMADAS_ENTRANTES_ULT40_DIAS_V4**
+  Dataset base con llamadas entrantes enriquecidas con información de clientes.
+
+- **BT_PORT_OUT_LLAMADAS_ENTR_V4**
+  Métricas agregadas de portabilidad dentro de 5 días post contacto.
+
+- **BT_PORT_OUT_LLAMADAS_ENTR_EMPRESAS_V4**
+  Análisis segmentado por operador de origen y duración de llamada.
+
+### 4. Data Visualization
+
+Los datos procesados son consumidos por dashboards en Looker Studio, los cuales permiten:
+
+- Monitoreo diario de llamadas de competencia
+- Seguimiento de tasas de portabilidad
+- Segmentación por operador y duración de llamada
+- Visualización ejecutiva para gerencia y VP
+
+### 5. Automation
+
+El pipeline se ejecuta de forma diaria mediante consultas programadas en BigQuery, asegurando la actualización constante de los indicadores utilizados por el negocio.
