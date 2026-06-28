@@ -130,7 +130,7 @@ Este enfoque permite priorizar sistemáticamente el universo crítico, que repre
 
 ## 📊 Operational KPIs
 
-- ~700k llamadas totales procesadas
+- ~700k llamadas totales diarias procesadas
 - ~300k llamadas contestadas (~35% tasa de respuesta)
 - ~1% de llamadas contestadas corresponden a segmento de alto riesgo (>5 min)
 - Segmento de alto riesgo con 4x – 6x mayor probabilidad de churn
