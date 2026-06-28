@@ -16,6 +16,7 @@ Este proyecto fue desarrollado como parte de procesos de analítica en el área 
 - 📊 Data Visualization
 - 🔄 Automation
 - 💡 Business Impact
+- 📊 Operational KPIs
 - 📂 Repository Structure
 - 📄 Output / Final Report
 - 👾 Tech Stack
@@ -130,7 +131,7 @@ A partir de este sistema, se implementó una estrategia de retención basada en 
 
 Este enfoque permite priorizar sistemáticamente el universo crítico, que representa cerca del 1% del total de llamadas contestadas procesadas por el pipeline.
 
-📊 Operational KPIs
+## 📊 Operational KPIs
 
 - ~700k llamadas totales procesadas
 - ~300k llamadas contestadas (~35% tasa de respuesta)
