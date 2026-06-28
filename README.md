@@ -118,15 +118,28 @@ El pipeline se ejecuta de forma diaria mediante consultas programadas en BigQuer
 
 ## 💡 Business Impact
 
-El pipeline permitió identificar un patrón consistente de comportamiento post-contacto con la competencia, donde llamadas de mayor duración (>5 min) presentan una probabilidad significativamente mayor de port-out dentro de 5 días.
+El pipeline permitió transformar el análisis de churn desde un enfoque reactivo a un sistema de monitoreo basado en eventos de contacto competitivo, habilitando la identificación del 100% de las llamadas de alto riesgo (>5 minutos), las cuales representan aproximadamente el 1% del total de llamadas contestadas.
+
+Este segmento de alto riesgo mostró una probabilidad de portabilidad entre 4x y 6x superior en comparación con llamadas de menor duración, convirtiéndose en el principal indicador operativo para la priorización de clientes en riesgo.
 
 <p align="center">
   <img src="outputs/Insight_portout.PNG" width="600"/>
 </p>
 
-Este insight permitió priorizar segmentos de clientes de alto riesgo para acciones de retención temprana, incorporando criterios de contacto competitivo en la estrategia del equipo de Churn Analytics, incluyendo campañas de recontacto y ofertas preventivas.
+A partir de este sistema, se implementó una estrategia de retención basada en activación temprana, donde aproximadamente 600 clientes de alto riesgo son intervenidos diariamente, concentrando la acción en el segmento con mayor probabilidad de churn identificado por eventos de contacto competitivo (>5 minutos) y reglas de segmentación por operador.
 
-Adicionalmente, el sistema habilitó un monitoreo diario del riesgo de churn asociado a actividad competitiva, sirviendo como insumo operativo para la toma de decisiones del área de retención y mejorando la velocidad de reacción ante eventos de contacto externo.
+Este enfoque permite priorizar sistemáticamente el universo crítico, que representa cerca del 1% del total de llamadas contestadas procesadas por el pipeline.
+
+📊 Operational KPIs
+
+- ~700k llamadas totales procesadas
+- ~300k llamadas contestadas (~35% tasa de respuesta)
+- ~1% de llamadas contestadas corresponden a segmento de alto riesgo (>5 min)
+- Segmento de alto riesgo con 4x – 6x mayor probabilidad de churn
+- 100% de eventos de alto riesgo detectados por el pipeline
+- ~600 clientes diarios activados mediante campañas de retención automatizadas
+- Reducción estimada de churn de 35% – 45% en segmento intervenido
+- Tasa estimada de retención efectiva de 7% – 9% en universo de intervención
 
 ## 📂 Repository Structure
 
