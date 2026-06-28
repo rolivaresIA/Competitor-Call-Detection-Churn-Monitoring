@@ -1,4 +1,4 @@
-# Competitor Call Detection & Churn Monitoring
+# Competitor Contact & Churn Impact Analytics
 
 Pipeline end-to-end en BigQuery para el monitoreo de llamadas entrantes provenientes de la competencia, análisis de comportamiento de clientes post-contacto y medición de riesgo de portabilidad (churn) en un horizonte de 5 días.
 
