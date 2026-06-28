@@ -10,11 +10,7 @@ Este proyecto fue desarrollado como parte de procesos de analítica en el área 
 - 🎯 Objective of the Project
 - 🛠️ Data Pipeline Architecture
 - 🧠 Convención de nombres en el diagrama
-- 📥 Data Sources
-- ⚙️ Data Processing
-- 🗄️ Data Models Generated
-- 📊 Data Visualization
-- 🔄 Automation
+- 💻 Flujo de Datos y Operaciones
 - 💡 Business Impact
 - 📊 Operational KPIs
 - 📂 Repository Structure
@@ -70,6 +66,7 @@ Estos nombres corresponden directamente a las tablas reales implementadas en Big
 
 Esta simplificación se realizó únicamente con fines visuales, sin afectar la estructura ni lógica del pipeline de datos.
 
+## 💻 Flujo de Datos y Operaciones
 ### 📥 1. Data Sources
 
 - **Traffic Voice Data (Datalake de llamadas entrantes):**
