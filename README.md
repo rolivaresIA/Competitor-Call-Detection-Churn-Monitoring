@@ -29,7 +29,7 @@ Dentro del área de Churn & Retention de Claro Chile, existía la necesidad de m
 
 Antes de este desarrollo, no existía un sistema automatizado que permitiera:
 
-- Identificar llamadas entrantes provenientes de operadores competidores
+- Identificar y segmentar llamadas entrantes provenientes de operadores competidores
 - Relacionar estas interacciones con la cartera de clientes vigente
 - Medir el impacto de estas llamadas en la portabilidad dentro de una ventana de 5 días
 
